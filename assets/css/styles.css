@@ -1,157 +1,163 @@
 @import url('reset.css');
 
 body {
-  background-color: black;
-  font-family: Arial, sans-serif;
+  background-color: black; /* Cor de fundo preta */
+  font-family: Arial, sans-serif; /* Fonte padrão */
 }
 
 h2 {
-  font-size: 2rem;
-  color: #33A8DB;
-  font-weight: bold;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+  font-size: 2rem; /* Tamanho da fonte: 2 vezes o tamanho base */
+  color: #33A8DB; /* Cor azul */
+  font-weight: bold; /* Negrito */
+  letter-spacing: 0.25em; /* Espaçamento entre letras */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  margin-bottom: 1.5em; /* Margem inferior proporcional */
 }
 
 p {
-  color: white;
+  color: white; /* Cor do texto */
 }
 
 section {
-  margin: 100px auto;
+  margin: 6.25em auto; /* Margem superior e inferior proporcional */
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 600px;
-  padding-top: 60px;
-  border-bottom: 1px solid #33A8DB80;
+  background-image: 
+    linear-gradient(
+      hsl(0, 0%, 0%, 0.6), /* Transparente preto (50% opacidade) */
+      hsl(191, 100%, 60%, 0.2), /* Azul claro com opacidade */
+      hsl(0, 0%, 0%, 0.6) /* Transparente preto (50% opacidade) */
+    ), 
+    url('../images/banner.png'); /* Imagem de fundo */
+  background-size: cover; /* Tamanho da imagem de fundo */
+  background-repeat: no-repeat; /* Não repetir imagem */
+  height: 37.5em; /* Altura proporcional */
+  padding-top: 3.75em; /* Espaçamento superior proporcional */
+  border-bottom: 1px solid hsl(191, 100%, 60%, 0.5); /* Borda azul suave */
 }
 
 .banner .banner-content {
-  color: white;
-  width: 600px;
-  margin: auto;
-  text-align: center;
+  color: white; /* Cor do texto */
+  width: 37.5em; /* Largura do conteúdo */
+  margin: auto; /* Centraliza o conteúdo */
+  text-align: center; /* Alinhamento central */
 }
 
 .banner h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: transparent;
-  background: -webkit-linear-gradient(#33A8DB, #1472B7);
-  background-clip: text;
-  -webkit-background-clip: text;
+  font-size: 3.125rem; /* Tamanho da fonte proporcional */
+  font-weight: 900; /* Peso da fonte */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  color: transparent; /* Cor transparente para usar degradê */
+  background: -webkit-linear-gradient(hsl(191, 100%, 60%), hsl(210, 100%, 40%)); /* Degradê azul */
+  background-clip: text; /* Aplica o degradê apenas no texto */
+  -webkit-background-clip: text; /* Compatibilidade com navegadores WebKit */
 }
 
 .banner p {
-  font-size: 1.25rem;
-  margin: 16px 0 24px;
+  font-size: 1.25rem; /* Tamanho da fonte */
+  margin: 1em 0 1.5em; /* Margem superior e inferior */
 }
 
 .banner .logo {
-  background-color: rgba(0, 0, 0, .2);
-  height: 260px;
-  width: 260px;
-  margin: auto;
-  border-radius: 50%;
-  padding: 16px;
-  margin-bottom: 16px;
+  background-color: hsl(0, 0%, 0%, 0.2); /* Fundo preto transparente */
+  height: 16.25em; /* Altura proporcional */
+  width: 16.25em; /* Largura proporcional */
+  margin: auto; /* Centraliza o logo */
+  border-radius: 50%; /* Forma circular */
+  padding: 1em; /* Espaçamento interno proporcional */
+  margin-bottom: 1em; /* Margem inferior */
 }
 
 .banner .logo img {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  margin: auto; /* Centraliza a imagem */
+  width: 100%; /* Preenche a largura */
+  height: 100%; /* Preenche a altura */
+  object-fit: contain; /* Ajusta a imagem dentro do contêiner */
 }
 
 .banner .banner-content button {
-  color: #31A8DD;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 16px 32px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  background-color: transparent;
-  border-image: linear-gradient(#3BA1CD, #1572B7);
-  border-image-slice: 10;
-  border-radius: 30px;
+  color: hsl(191, 100%, 60%); /* Cor do texto do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  padding: 1em 2em; /* Espaçamento interno proporcional */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 0.25em; /* Espaçamento entre letras */
+  background-color: transparent; /* Fundo transparente */
+  border-image: linear-gradient(hsl(191, 100%, 60%), hsl(210, 100%, 40%)); /* Degradê na borda */
+  border-image-slice: 10; /* Controle do corte da borda */
+  border-radius: 1.875em; /* Bordas arredondadas */
 }
 
 #course-content {
-  width: 800px;
-  text-align: center;
+  width: 50em; /* Largura proporcional */
+  text-align: center; /* Alinhamento central */
 }
 
 #course-content .modules-list {
-  margin: 24px 0;
+  margin: 1.5em 0; /* Margem superior e inferior */
 }
 
 #course-content .modules-list .module {
-  color: white;
-  width: 530px;
-  margin: 0 auto 24px;
-  border: 1px solid #33A8DB;
-  background-color: #252525;
-  padding: 16px;
-  border-radius: 100px;
-  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+  color: white; /* Cor do texto */
+  width: 33.125em; /* Largura proporcional */
+  margin: 0 auto 1.5em; /* Margem inferior */
+  border: 1px solid hsl(191, 100%, 60%); /* Borda azul */
+  background-color: hsl(0, 0%, 15%); /* Fundo escuro */
+  padding: 1em; /* Espaçamento interno */
+  border-radius: 6.25em; /* Bordas arredondadas */
+  box-shadow: inset -0.3125em 0.375em 0.5em hsl(0, 0%, 0%, 0.7); /* Sombra interna */
 }
 
 #course-content .modules-list .module span {
-  color: #33A8DB;
+  color: hsl(191, 100%, 60%); /* Cor azul */
 }
 
 #transform-world {
-  height: 560px;
-  background-size: cover;
-  background-image: url("../images/woman-code.png");
-  background-attachment: fixed;
-  border-top: 1px solid #33A8DB80;
-  border-bottom: 1px solid #33A8DB80;
-  padding: 200px;
+  height: 35em; /* Altura proporcional */
+  background-size: cover; /* Tamanho da imagem */
+  background-image: url("../images/woman-code.png"); /* Imagem de fundo */
+  background-attachment: fixed; /* Imagem fixa */
+  border-top: 1px solid hsl(191, 100%, 60%, 0.5); /* Borda superior azul */
+  border-bottom: 1px solid hsl(191, 100%, 60%, 0.5); /* Borda inferior azul */
+  padding: 12.5em; /* Espaçamento interno proporcional */
 }
 
 #transform-world p {
-  font-weight: 900;
-  font-size: 2.5rem;
-  text-transform: lowercase;
-  max-width: 250px;
-  text-shadow: 3px 2px #33A8DB;
+  font-weight: 900; /* Peso da fonte */
+  font-size: 3.125rem; /* Tamanho da fonte proporcional */
+  text-transform: lowercase; /* Texto em minúsculas */
+  max-width: 15.625em; /* Largura máxima */
+  text-shadow: 0.1875em 0.125em hsl(191, 100%, 60%); /* Sombra do texto azul */
 }
 
 #professional-challenges {
-  text-align: center;
-  width: 800px;
+  text-align: center; /* Alinhamento central */
+  width: 50em; /* Largura */
 }
 
 #professional-challenges img {
-  margin: 32px 0;
+  margin: 2em 0; /* Margem superior e inferior */
 }
 
 /* footer */
 footer {
-  padding: 60px 0;
-  text-align: center;
-  background-image: linear-gradient(hsl(191, 100%, 60%, 0), hsl(191, 100%, 60%, 20%)); /* Degradê com HSL */
-  border-top: 1px solid #33A8DB80;
+  padding: 3.75em 0; /* Espaçamento interno proporcional */
+  text-align: center; /* Alinhamento central */
+  background-image: linear-gradient(hsl(191, 100%, 60%, 0), hsl(191, 100%, 60%, 0.2)); /* Degradê azul */
+  border-top: 1px solid hsl(191, 100%, 60%, 0.5); /* Borda superior azul */
 }
 
 footer .dio-logo {
-  width: 300px;
+  width: 18.75em; /* Largura do logo */
 }
 
 footer a {
-  color: #33A8DB;
-  font-weight: bold;
-  text-decoration: none;
+  color: hsl(191, 100%, 60%); /* Cor azul */
+  font-weight: bold; /* Negrito */
+  text-decoration: none; /* Sem sublinhado */
 }
 
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sublinha o link no hover */
 }
