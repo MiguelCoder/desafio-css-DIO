@@ -1,7 +1,14 @@
+/* Importando a fonte "Raleway" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
 
+/* Aplicando reset de estilo global */
 * {
+  /* Definindo a fonte padrão para toda a página */
   font-family: 'Raleway', sans-serif;
+
+  /* Fazendo o ajuste no box-model para que o padding e o border sejam incluídos nas dimensões dos elementos */
   box-sizing: border-box;
+
+  /* Removendo margens padrão de todos os elementos */
   margin: 0;
 }
