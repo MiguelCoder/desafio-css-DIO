@@ -134,46 +134,24 @@ section {
   margin: 32px 0;
 }
 
-/* Novo estilo para o footer */
+/* footer */
 footer {
-  padding: 40px 0;
-  background-color: #1e1e1e; /* Cor de fundo mais escura */
-  text-align: center; /* Centraliza o conteúdo */
-  color: white; /* Cor do texto */
+  padding: 60px 0;
+  text-align: center;
+  background-image: linear-gradient(hsl(191, 100%, 60%, 0), hsl(191, 100%, 60%, 20%)); /* Degradê com HSL */
+  border-top: 1px solid #33A8DB80;
 }
 
 footer .dio-logo {
-  width: 250px;
-  margin-bottom: 20px;
+  width: 300px;
 }
 
 footer a {
-  color: #33A8DB; /* Cor do link */
-  font-weight: bold; /* Deixar o texto em negrito */
-  text-decoration: none; /* Remover o sublinhado */
+  color: #33A8DB;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline; /* Adiciona underline ao passar o mouse */
-}
-
-/* Linha azul no topo do footer */
-footer::before {
-  content: ''; /* Cria um elemento vazio */
-  display: block; /* Exibe como bloco */
-  height: 4px; /* Altura da linha */
-  background-color: #33A8DB; /* Cor azul do destaque */
-  width: 50%; /* Faz a linha ter 50% da largura */
-  margin: 0 auto 20px; /* Centraliza e adiciona margem inferior */
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  footer .dio-logo {
-    width: 200px; /* Ajuste do tamanho do logo em telas menores */
-  }
-
-  footer p {
-    font-size: 0.9rem; /* Ajuste do tamanho do texto para telas menores */
-  }
+  text-decoration: underline;
 }
